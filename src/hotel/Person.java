@@ -4,13 +4,13 @@ public class Person {
     private String name;
     private int id;
     private int age;
-    private String hometown;
+    private String hometown = "n/a";
 
     public Person(String name, int id, int age, String hometown) {
         setName(name);
         setId(id);
         setAge(age);
-        this.hometown = "n/a";
+        setHometown(hometown);
     }
 
     public String getName() {
@@ -49,6 +49,6 @@ public class Person {
     public String toString() {
         return String
                 .format("Person %s: %d, Age: %d, Hometown: %s"
-                        ,this.name, this.age, this.hometown);
+                        ,this.name,this.id, this.age, this.hometown);
     }
 }
