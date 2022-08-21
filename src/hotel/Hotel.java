@@ -9,16 +9,19 @@ public class Hotel {
     private int capacity;
     private List<Person> person;
 
-    public void setPerson(List<Person> person) {
-        this.person = new ArrayList<>();
-    }
-
-
     public Hotel(String name, int capacity) {
         this.name = name;
         this.capacity = capacity;
+        this.person = new ArrayList<>();
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
     public void add(Person person) {
         if (this.person.size() < this.capacity) {
             this.person.add(person);

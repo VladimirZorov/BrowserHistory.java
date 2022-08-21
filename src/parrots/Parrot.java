@@ -1,4 +1,4 @@
-package JavaAdvOldExams.parrots;
+package parrots;
 
 public class Parrot {
 

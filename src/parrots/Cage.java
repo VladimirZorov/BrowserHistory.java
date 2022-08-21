@@ -1,4 +1,4 @@
-package JavaAdvOldExams.parrots;
+package parrots;
 
 import java.util.ArrayList;
 import java.util.List;
