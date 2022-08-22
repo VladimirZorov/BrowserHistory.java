@@ -25,19 +25,29 @@ public class BasicStackOperations {
             numbersStack.pop();
         }
 
+        int numbersStackMin = Integer.MAX_VALUE;
+
+        for (Integer number: numbersStack){
+            if (number<numbersStackMin){
+                numbersStackMin = number;
+            }
+        }
+
         if (numbersStack.isEmpty()){
             System.out.println("0");
         }
 
+        boolean isExist = false;
         for (Integer number : numbersStack) {
             if (elementToCheck == number) {
+                isExist = true;
             }
         }
 
         if (isExist){
             System.out.println("true");
         } else {
-
+            System.out.println(numbersStackMin);
         }
 
     }
